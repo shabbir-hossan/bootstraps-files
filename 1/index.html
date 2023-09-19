@@ -12,8 +12,43 @@
 <body>
 
     <div class="container">
-        <header class="bg-primary p-4 rounded mb-4">
-            <h1 class="text-light text-center">Study with Shabbir</h1>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid bg-primary py-2 rounded">
+                  <a class="navbar-brand" href="#">&#60;<span class="text-white">Shabbir</span> /&#62;</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Link
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled text-white" aria-disabled="true">Services</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
             <div class="services-section bg-light p-3">
@@ -48,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="about bg-secondary p-5 rounded text-center">
+            <div class="about text-primary-emphasis bg-primary-subtle border border-primary-subtle p-5 rounded text-center">
                 <div class="title text-center py-4">
                     <h1 class="text-uppercase fw-bold">About Me</h1>
                 </div>
@@ -57,22 +92,32 @@
                         <img src="./profile.png" style="width: 250px;" class="img-fluid rounded-circle text-center" alt="image not found">
                     </div>
     
-                    <div class="discription col-lg-8">
-                        <p class="pb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur eos repudiandae quidem ipsum hic quae aliquam cum magni consequatur ipsa itaque, earum saepe dolore nisi similique velit dignissimos cumque fugiat dicta harum pariatur neque. Rem animi nam ab qui accusantium ullam aspernatur consectetur error adipisci odio. Quos, recusandae sapiente voluptate nulla perspiciatis quasi exercitationem odit ipsam soluta corporis voluptatibus excepturi rem. Vero iure consequuntur, provident earum quas magni eveniet totam voluptatum a ducimus qui asperiores optio, aliquid fugiat sint. Aut qui esse molestias maiores doloremque nisi asperiores, dolore temporibus libero quasi necessitatibus unde voluptate quam quod labore tempore repellat aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus sapiente odio mollitia impedit harum. Eveniet maiores quam modi numquam quod!</p>
+                    <div class="discription col-lg-8 text-lg-start">
+                        <p class="pb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur eos repudiandae quidem ipsum hic quae aliquam cum magni consequatur ipsa itaque, earum saepe dolore nisi similique velit dignissimos cumque fugiat dicta harum pariatur neque. Rem animi nam ab qui accusantium ullam aspernatur consectetur error adipisci odio. Quos, recusandae sapiente voluptate nulla perspiciatis quasi exercitationem odit ipsam soluta corporis voluptatibus excepturi rem. Vero iure consequuntur, provident earum quas magni eveniet totam voluptatum a ducimus qui asperiores optio, aliquid fugiat sint. Aut qui esse molestias maiores doloremque nisi asperiores, dolore temporibus libero quasi necessitatibus unde voluptate quam quod labore tempore repellat aperiam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a class="text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Learn more...</a></p>
 
-                        <div class="alert alert-primary alert-dismissible" role="alert">
+                        <div class="collapse" id="collapseExample">
+                            <p>Repellendus sapiente odio mollitia impedit harum. Eveniet maiores quam modi numquam quod!</p>
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn btn-outline-primary btn-md mb-3">CV Download</button>
+
+                        <button class="btn btn-outline-success btn-md mb-3">Click more...</button>
+                        </div>
+
+                        <div class="alert alert-warning alert-dismissible" role="alert">
                             <button
                               class="btn-close"
                               data-bs-dismiss="alert"
                               aria-label="Close"
                             ></button>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, fuga!
+                            Have you visit my github account? <a href="#" class="text-decoration-none">Visit her</a> 
                           </div>
                     </div>
                 </div>
             </div>
 
-            <div class="customar-service p-4">
+            <div class="customar-service p-4 bg-light mt-2 rounded">
                 <div class="title text-center py-5">
                     <h1 class="fw-bold text-uppercase">Customar Services</h1>
                 </div>
@@ -105,6 +150,29 @@
                     </div>
                 </div>
             </div>
+
+
+            <ul class="list-group">
+                <li class="list-group-item bg-primary text-light text-center">Afran Khan</li>
+                <li class="list-group-item bg-success text-light text-center">Shabbir hossan</li>
+                <li class="list-group-item bg-danger text-light text-center">Arefin Khan</li>
+                <a href="#" class="list-group-item bg-warning text-center"> Fahim</a>
+            </ul>
+            <!-- <ul class="list-group list-group-horizontal bg-secondary-subtle justify-content-center my-2 py-2">
+                <li class="list-group-item active">Pre</li>
+                <li class="list-group-item text-primary">1</li>
+                <li class="list-group-item text-primary">2</li>
+                <li class="list-group-item text-primary">3</li>
+                <li class="list-group-item active">Next</li>
+            </ul> -->
+
+            <ul class="pagination py-3 bg-dark justify-content-center">
+                <li class="page-item"><a href="#" class="page-link active">Pre</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                <li class="page-item"><a href="#" class="page-link active">Next</a></li>
+            </ul>
         </main>
         <footer>
 
